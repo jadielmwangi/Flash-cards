@@ -1,0 +1,40 @@
+{% extends 'projects/base.html' %}
+{% load static %}
+{% block styles %}
+{{block.super}}
+
+{% endblock%}
+{% block content %}
+{{block.super}}
+
+
+<div class="btn1 btn container-fluid" style="background-image: url(/static/img/car.jpg); width:100% ;">
+
+
+    <div class="header" style="height: 80vh; font-family: 'Metal Mania', cursive;">
+        <div class="container" style="color:white;">
+            <div class="row" style="padding-top:50px;">
+                <div class="col-md-4" style="font-size: large; text-align: center;">
+                    <strong><cite>Today's date</strong> {{date|date:"F d, Y"}}</cite>
+                </div>
+                <div class="col-md-4"></div>
+
+            </div>
+            <div style="text-align:center; font-size: large; padding-top:30px;">
+                <p style="font-family: Arial, Helvetica, sans-serif;" class="blog">WELCOME TO FLASHCARD APPLICATION:</p>
+            </div>
+            <div style="text-align:center; font-size: 20px;">
+                <p class="" style="font-family: 'Times New Roman', Times, serif;">BY <strong style="color:lightgreen;"
+                        class="mr-3">Jadiel Mwangi</strong> </p>
+            </div>
+            <div style="height:230px;">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
